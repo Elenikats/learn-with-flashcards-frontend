@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap');
+
+* {
+    outline: 0;
+
+  }
+
+  .Homepage {
+    .flex-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2rem;
+    }
+
+      .info {
+        text-align: left;
+        background-color: rgba(236, 179, 129, 0.305);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        max-width: 40%;
+        h1 {
+          text-align: center;
+          color: rgb(234, 242, 15);
+          font-family: 'Pacifico', cursive;
+          font-size: 3rem;
+        }
+    
+        main {
+          margin-top: 2rem;
+          padding: 1rem;
+        }
+
+        p {
+          padding: .3rem 0rem;
+        }
+        
+        button {
+          background-color: rgba(162, 234, 227, 0.708);
+          min-width: 30%;
+          margin: 0.8em;
+          padding: 1em;
+          border: 1px solid #e4e6e8;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.1s ease-in;
+          margin: 2.5rem auto 0rem auto;
+          display: block;
+      
+    
+          &:hover {
+            background-color: rgb(158, 209, 217);
+            color: white;
+          }
+      }
+    
+    }
+      
+      .Login {
+        background-color: rgba(190, 150, 189, 0.416);
+        border-radius: 0.5rem;
+        max-width: 40%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    
+        input {
+        display: block;
+        max-width: 90%;
+        margin: 1em;
+        padding: 1em;
+        width: 35em;
+        border-radius: 8px;
+        border-style: none;
+        border: 2px solid #e4e6e8;
+        transition: 0.1s ease;
+    
+        &:hover {
+          border-color: rgb(158, 209, 217);
+        }
+        }
+      
+        button {
+          background-color: rgba(162, 234, 227, 0.708);
+          min-width: 30%;
+          margin: 0.8em;
+          padding: 1em;
+          border: 1px solid #e4e6e8;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.1s ease-in;
+    
+        &:hover {
+          background-color: rgb(158, 209, 217);
+          color: white;
+        }
+      }
+    }
+  }
+
+
+  // REGISTER
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button {
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+  }
+  
+  .button-default {
+    background: #247BA0;
+    color: #fff;
+  }
+
+
+
+  
+
+//////////////////////// media queries 640px
+
+@media screen and (max-width: 640px) {
+
+.Homepage {
+
+  .flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+    .info {
+      padding: 1rem;
+      max-width: 85%;
+      margin: 1rem;
+      h1 {
+        margin: 1rem;
+        font-size: 3rem;
+      }
+  
+      main {
+        margin-top: 0rem;
+      }
+
+      button {
+        margin: 2rem auto 2rem auto;
+      }
+      
+
+  
+  }
+    
+    .Login {
+      max-width: 85%;
+      padding: 1rem;
+  
+      input {
+      max-width: 80%;
+      margin: 1em;
+      padding: 1em;
+      width: 35em;
+      border-radius: 8px;
+      }
+
+      button {
+        margin: 2rem auto 2rem auto;
+      }
+
+  
+  }
+}
+  
+}
