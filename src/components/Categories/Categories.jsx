@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import categ from "../../images/categ.jpg";
 import Logout from "../Logout/Logout.jsx";
 import { useContext, useRef, useState } from "react";
@@ -53,11 +54,13 @@ function Categories() {
       </div>
       <ul>
         {categoryName.map((cat, i) => (
-          <li key={i}>
-            {cat}
-            <button>edit</button>
-            <button id="deletebtn">delete</button>
-          </li>
+          <Link to="/flashcards">
+            <li key={i}>
+              {cat}
+              <button>edit</button>
+              <button id="deletebtn">delete</button>
+            </li>
+          </Link>
         ))}
       </ul>
 

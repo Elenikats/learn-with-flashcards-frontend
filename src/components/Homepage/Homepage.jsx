@@ -1,8 +1,6 @@
 import "../../App.scss";
 import Login from "./Login.jsx";
 import coverimage from "../../images/coverimage.jpg";
-import desk from "../../images/desk.jpg";
-import desk2 from "../../images/desk2.jpg";
 import "./Homepage.scss";
 
 function Homepage() {
