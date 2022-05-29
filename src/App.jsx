@@ -2,8 +2,7 @@
 import { useContext } from "react";
 import Homepage from "../src/components/Homepage/Homepage.jsx";
 import Categories from "./components/Categories/Categories.jsx";
-import Navigation from "./components/Navigation/Navigation.jsx";
-import "./App.css";
+import "./App.scss";
 import { userContext } from "./contexts/userContext.js";
 
 function App() {

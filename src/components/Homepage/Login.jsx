@@ -57,7 +57,8 @@ function Login() {
       <button type="submit">Submit</button>
 
       <div>
-        Not registered yet? <a href="">Create an account </a>
+        Not registered yet?{" "}
+        <button className="register-button">Create an account </button>
       </div>
     </form>
   );

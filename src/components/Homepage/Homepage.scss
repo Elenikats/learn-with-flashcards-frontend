@@ -2,7 +2,6 @@
 
 * {
     outline: 0;
-
   }
 
   .Homepage {
@@ -52,7 +51,7 @@
           &:hover {
             background-color: rgb(158, 209, 217);
             color: white;
-          }
+          }    
       }
     
     }
@@ -78,6 +77,10 @@
         border-style: none;
         border: 2px solid #e4e6e8;
         transition: 0.1s ease;
+
+        &::placeholder {
+          color: rgb(158, 155, 155);
+        }
     
         &:hover {
           border-color: rgb(158, 209, 217);
@@ -94,17 +97,22 @@
           cursor: pointer;
           transition: 0.1s ease-in;
     
-        &:hover {
-          background-color: rgb(158, 209, 217);
-          color: white;
-        }
+          &:hover {
+            background-color: rgb(158, 209, 217);
+            color: white;
+          }
       }
+      .register-button {
+        padding: 0.3rem;
+        background-color: #c291be8b;
+    }
     }
   }
 
 
   // REGISTER
 
+  .Register {
 
   .modal-overlay {
     position: fixed;
@@ -153,28 +161,18 @@
     cursor: pointer;
     border: none;
   }
-  
-  button {
-    font-size: .9rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 3px;
-    padding: .3rem 1rem;
-    margin-left: .5rem;
-  }
+
   
   .button-default {
     background: #247BA0;
     color: #fff;
   }
+}
 
 
+////////////////////////* media queries 640px *////////////////////////////
 
-  
-
-//////////////////////// media queries 640px
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 
 .Homepage {
 
@@ -213,7 +211,7 @@
       padding: 1rem;
   
       input {
-      max-width: 80%;
+      max-width: 85%;
       margin: 1em;
       padding: 1em;
       width: 35em;

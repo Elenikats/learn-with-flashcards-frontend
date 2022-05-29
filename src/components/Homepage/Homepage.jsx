@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../../App.scss";
 import Login from "./Login.jsx";
 import coverimage from "../../images/coverimage.jpg";
 import desk from "../../images/desk.jpg";

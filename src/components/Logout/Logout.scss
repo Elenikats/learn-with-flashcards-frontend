@@ -1,16 +1,17 @@
 .Logout {
     .button_container {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         button {
             background-color: rgba(162, 234, 227, 0.708);
-            min-width: 3%;
+            width: max-content;
             padding: 0.7em;
-            border: 1px solid #e4e6e8;
+            border: 2px solid #e4e6e8;
             border-radius: 5px;
+            word-break: none;
             cursor: pointer;
             transition: 0.1s ease-in;
-            margin-right: 2rem;
+            margin: 2rem;
             &:hover {
             background-color: rgb(158, 209, 217);
             color: white;
