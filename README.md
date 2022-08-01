@@ -4,12 +4,12 @@ The purpose of this project is for the user to be able to create different categ
 
 # In summary, the user is able to:
 
-register and login,
-create categories of topics intrested to learn,
-create flashcards.
+- register and login,
+- create categories of topics intrested to learn,
+- create flashcards.
 
 # How to run the project
 
-In the terminal run 
+In the terminal run:
 - npm install
 - npm start
